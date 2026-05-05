@@ -7,9 +7,10 @@ This repository demonstrates design patterns in three categories:
 - Structural
 - Behavioral
 
-Each pattern includes:
-- Without Design Pattern (Bad Practice)
-- With Design Pattern (Good Practice)
+Each category contains pattern-specific folders.  
+Each pattern folder includes:
+- without/ → implementation without design pattern (bad practice)
+- with/ → implementation using design pattern (good practice)
 
 ---
 
@@ -26,6 +27,27 @@ Each pattern includes:
 
 ---
 
+## Project Structure
+
+design-patterns-demo/
+│
+├── creational/
+│   └── factory/
+│       ├── without/
+│       └── with/
+│
+├── structural/
+│   └── adapter/
+│       ├── without/
+│       └── with/
+│
+├── behavioral/
+│   └── strategy/
+│       ├── without/
+│       └── with/
+│
+└── README.md
+
 ## Tech Stack
 - Python
 - VS Code
@@ -36,7 +58,7 @@ Each pattern includes:
 ## How to Run
 
 ### 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/design-patterns-demo.git
+git clone https://github.com/raaaviiiii/design-patterns-demo.git
 
 cd design-patterns-demo
 
@@ -45,7 +67,7 @@ cd design-patterns-demo
 ### 2. Run Creational Pattern (Factory)
 
 Without Pattern:
-cd creational/without
+cd creational/factory/without
 python factory_without.py
 
 With Pattern:
@@ -57,7 +79,7 @@ python factory_with.py
 ### 3. Run Structural Pattern (Adapter)
 
 Without Pattern:
-cd ../../structural/without
+cd ../../../structural/adapter/without
 python adapter_without.py
 
 With Pattern:
@@ -69,7 +91,7 @@ python adapter_with.py
 ### 4. Run Behavioral Pattern (Strategy)
 
 Without Pattern:
-cd ../../behavioral/without
+cd ../../../behavioral/strategy/without
 python behavioral_without.py
 
 With Pattern:
